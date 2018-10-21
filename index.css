@@ -2,19 +2,28 @@
   box-sizing: border-box;
 }
 
+html, body {
+  padding:0;
+  margin:0;
+  position:relative;
+}
+
 body {
   font-family: "Open Sans",
   sans-serif; 
   font-size: 20px;
   color: #444;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.5;  
 }
 
 nav,
 footer {
-  padding: 1% 0;
-  background-color: #aaa;
+  background-color: #0a0e2b;
+  color:white;
+  padding:0;
+  margin:0;
+  height: 50px;
 }
 
 nav {
@@ -23,20 +32,334 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
+  padding:5px;
+  background-color: #0a0e2b;
+}
+
+.navbar{
+  line-height: 45px;
+  vertical-align: middle;
+  height: 50px;
+}
+
+.navbar li{
+  display:inline-block;
+  font-size: 18px;
+  width:80px;  
+  color:white;
+  cursor:pointer;
+  
+}
+.navbar ul{
+  margin:0;
+  float:right;
+  padding-right:10px;  
+}
+.navbar h1{
+  float:left;
+  margin:0;
+  color:white;
+  font-style: italic;
+}
+
+header {  
+  
+  height: 94vh;
+  width:100%;
+  margin:0;
+  
+  display:flex;
+  align-items: center;
+  color:#0a0e2b;  
 }
 
 
 
-header {
-  padding: 12% 0;
+header h4{
+  color:#0a0e2b;
+  font-size: 22px;
 }
 
-section {
-  min-height: 200px;
-  padding: 6% 0;
-  background-color: #bbb;
+header div{
+  width: 80%;
+  margin:0 auto;
 }
 
-section:nth-child(even) {
-  background-color: #ddd;
+header p{
+  color: #0a0e2b;
+  font-size:18px;
+  font-style: italic;
 }
+
+#page-contact {
+  height: 94vh;
+  width: 100%;  
+  display:none;
+  display:flex;
+  align-items: center;
+}
+
+#page-projects{
+  height: 94vh;
+  width:100%;
+  display:none;
+ /* display:flex;
+  align-items: center;  */
+  padding-top:10px;  
+}
+
+.coverDiv{
+  width:100%;
+  overflow-y: auto;
+  height:93%;
+}
+
+.projectsCls{
+  width: 80%;
+  height: auto;   
+  margin: 15px auto 35px auto;
+  background-color: white; 
+}
+
+.projectsCls h3{
+  text-align: left;
+  margin:0;
+}
+
+.projectsCls img{
+  height: 55%;
+  width: 50%;
+  border: 1px solid black;
+  margin: 15px auto 15px auto;
+}
+
+.projectsCls p{
+  text-align: left;
+  font-size: 16px;
+  margin: 0;
+}
+
+.projectsCls h5{
+  text-align: left;
+  margin: 5px 0 5px 0;
+}
+
+main{
+  margin:43px 0 0 0;  
+  /* height: 94vh; */
+  padding:0;
+  width:100%;
+  /*  position:relative; */
+  color:#0a0e2b; 
+}
+
+/*
+main:after{
+  content:'';    
+  height: 94vh;
+  width:100%; 
+  opacity:0.30;  
+  background: url('./images/programming.jpg') center no-repeat;
+  background-size: cover;
+  position:absolute;  
+  top:0;
+  left:0;
+}*/
+
+.footerList li{
+  list-style-type: none;
+  display: inline;  
+}
+
+.footerList i{
+  margin-right: 5px;
+  cursor:pointer;
+}
+
+.footerList{
+  margin: 0;
+ /*padding:1px;*/
+  line-height: 50px;
+  vertical-align: middle;
+  width:100%;
+}
+
+.contactCls{
+  width:100%;
+}
+
+.contactCls li {
+  list-style-type: none;
+  display: inline;
+}
+
+.contactCls div{
+  width: 100%;
+}
+
+.contactCls i{
+  margin-right: 7px;
+  cursor:pointer;
+}
+.contactCls p {  
+  margin: 0 auto;
+  width: 50%;
+}
+
+footer{
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+
+a {
+  color:inherit;
+}
+/* galaxy s */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .navbar h1{
+      font-size:14px;
+    }
+
+    .navbar ul{
+      padding:0;
+    }
+
+    .navbar li{
+      font-size: 12px;
+      width: 38px;
+      margin-right: 6px;
+    }
+
+    .projectsCls img{
+      height: 65%;
+      width: 60%;
+      border: 1px solid black;
+      margin: 15px auto 15px auto;
+    }
+
+    header p{
+      font-size: 14px;
+    }
+    footer ul{
+      padding:0;
+    }
+
+    .contactCls ul{
+      padding:0;
+    }
+  }
+
+  /* iphone x */
+
+  @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+
+      .navbar h1{
+        font-size:14px;
+      }
+
+      .navbar ul{
+        padding:0;
+      }
+
+      .navbar li{
+        font-size: 12px;
+        width: 38px;
+        margin-right: 6px;
+      }
+
+      .projectsCls img{
+        height: 65%;
+        width: 60%;
+        border: 1px solid black;
+        margin: 15px auto 15px auto;
+      }
+
+      header p{
+        font-size: 14px;
+      }
+      footer ul{
+        padding:0;
+      }
+
+      .contactCls ul{
+        padding:0;
+      }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      .navbar h1{
+        font-size:14px;
+      }
+
+      .navbar ul{
+        padding:0;
+      }
+
+      .navbar li{
+        font-size: 12px;
+        width: 38px;
+        margin-right: 6px;
+      }
+
+      .projectsCls img{
+        height: 65%;
+        width: 60%;
+        border: 1px solid black;
+        margin: 15px auto 15px auto;
+      }
+
+      header p{
+        font-size: 14px;
+      }
+      footer ul{
+        padding:0;
+      }
+
+      .contactCls ul{
+        padding:0;
+      }
+    }
+
+    @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 568px)  {
+      .navbar h1{
+        font-size:14px;
+      }
+
+      .navbar ul{
+        padding:0;
+      }
+
+      .navbar li{
+        font-size: 11px;
+        width: 35px;
+        margin-right: 3px;
+      }
+
+      .projectsCls img{
+        height: 65%;
+        width: 60%;
+        border: 1px solid black;
+        margin: 15px auto 15px auto;
+      }
+
+      header p{
+        font-size: 14px;
+      }
+      footer ul{
+        padding:0;
+      }
+
+      .contactCls ul{
+        padding:0;
+      }
+    }
+
