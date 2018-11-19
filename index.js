@@ -16,6 +16,6 @@ function showHidePages(event){
 }
 
 $(function(){	
-	$('.js-menuItems').on('click','li',showHidePages);
-	showHidePages();
+	//$('.js-menuItems').on('click','li',showHidePages);
+	//showHidePages();
 });
