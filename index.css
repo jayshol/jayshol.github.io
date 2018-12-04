@@ -70,7 +70,9 @@ header {
   
   display:flex;
   align-items: center;
-  color:#0a0e2b;  
+  color:#0a0e2b;
+  background: url(./images/bg.jpg) no-repeat center;
+  background-size: cover;
 }
 
 
@@ -91,6 +93,21 @@ header p{
   font-style: italic;
   width:70%;
   margin:0 auto;
+}
+
+.profileImgDiv{
+  height: 200px;
+  width:150px;
+  border: 1px solid black;
+  border-radius: 105px;
+  margin-top: 75px;
+  background:url(./images/jayshol_1.jpg);
+  background-size: cover; 
+}
+
+.picClass{
+  height:100%;
+  width:100%;   
 }
 
 #page-contact {
@@ -121,6 +138,10 @@ header p{
   height:93%;
 }
 
+.coverDiv h1{
+  text-align: center;
+}
+
 .projectsCls{
   width: 80%;
   height: auto;   
@@ -132,12 +153,19 @@ header p{
   text-align: left;
   margin:0;
 }
+.projectsCls span{
+  background-color: #0a0e2b;
+  color:white;
+  padding:3px;
+  border-radius: 5px;
+}
 
 .projectsCls img{
   height: 55%;
   width: 50%;
   border: 1px solid black;
   margin: 15px auto 15px auto;
+  border-radius:15px;
 }
 
 .projectsCls p{
