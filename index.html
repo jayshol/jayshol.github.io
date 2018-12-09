@@ -4,6 +4,7 @@
     <title>Jayashree's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Playfair+Display:700i|Ruda" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
 </head>
@@ -17,22 +18,27 @@
         </ul>
     </nav>
     <main role="main" >
-        <header role="banner" id="page-about" >
-            <div>
-                <div class="profileImgDiv">                    
-                </div>
-                <h4>Hi, My name is Jaya</h4>
-                <p>I am a web developer and recent graduate from Full Stack Flex Bootcamp at Thinkful. Creating websites that simplify the most complex tasks in life, thus enabling people to lead a quality life, is my passion. I love JavaScript as it is one of the simplest yet dominant languages in the programming world.</p>
-                <br>
-                <p>Reading, writing, cooking, meditation, and yoga are some of my other interests besides programming. Playing mind games, and learning new languages (both human and software) are some of the things I like to do when I am not coding.</p>
-            </div>
+        <header role="banner">            
+                    <div class="profileDiv">
+                        <div class="profileImgDiv">                    
+                        </div>
+                        <h3>Hi, I'm Jaya</h3>
+                    </div>            
         </header>
+        <section id="page-about">
+            <h3>About Me</h3>
+            <div class="projectsCls">
+                <p class="textClass">I am a web developer and recent graduate from Full Stack Flex Bootcamp at Thinkful. Creating websites that simplify the most complex tasks in life, thus enabling people to lead a quality life, is my passion. I love JavaScript as it is one of the simplest yet dominant languages in the programming world.</p>
+                
+                <p class="textClass">Reading, writing, cooking, meditation, and yoga are some of my other interests besides programming. Playing mind games, and learning new languages (both human and software) are some of the things I like to do when I am not coding.</p>
+            </div>
+        </section>
 
         <section id="page-projects">
             <div class="coverDiv">
-                <h1>Projects</h1>                
+                <h3>Projects</h3>                
                 <div class="projectsCls">
-                    <h3>1. Focus</h3>
+                    <h4>1. Focus</h4>
                     <a href="https://focus-meditation-app.herokuapp.com/" target="_blank"><img src="./images/homePage.png" alt="project screenshot" /></a>
                     <p>This application helps users to practice meditation without any hassles. Users have to register to meditate. They can log in daily and meditate choosing from a variety of guided meditations available in the application. 
 
@@ -52,11 +58,14 @@
                     </p>
                     <h5>Technologies Used:</h5>
                     <p><span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span>, <span>React</span>, <span>Redux</span>, <span>Node.js</span>, <span>Express.js</span>, <span>MongoDB</span></p>
-                    <h5>Live Demo:</h5>
-                    <a href="https://jigsaw-puzzle-app.herokuapp.com/home" target="_blank"><p>https://jigsaw-puzzle-app.herokuapp.com/home</p></a>
-                    <h5>Git URLs:</h5>
-                    <a href="https://github.com/jayshol/puzzle-react.git" target="_blank"><p>https://github.com/jayshol/puzzle-react.git</p></a>
-                    <a href="https://github.com/jayshol/puzzle-node-server.git" target="_blank"><p>https://github.com/jayshol/puzzle-node-server.git</p></a>
+                    
+                    <div class="demoDiv" title="Live Demo"><a href="https://jigsaw-puzzle-app.herokuapp.com/home" target="_blank"><i class="fas fa-angle-double-right"></i>&nbsp;Demo</a></div>
+                    
+                    
+                    <div class="gitDiv" title="Client Code"><a href="https://github.com/jayshol/puzzle-react.git" target="_blank"><i class="fab fa-github"></i>&nbsp;&nbsp;Git</a></div>
+
+                    <div class="gitDiv" title="Server Code"><a href="https://github.com/jayshol/puzzle-node-server.git" target="_blank"><i class="fab fa-github"></i>&nbsp;&nbsp;Git</a></div>
+                                        
                 </div>
                 <div class="projectsCls">
                     <h3>3. Restaurant Search</h3>
