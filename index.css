@@ -9,12 +9,13 @@ html, body {
 }
 
 body {
-  font-family: "Open Sans",
-  sans-serif; 
+  font-family: 'Ruda', sans-serif; 
   font-size: 20px;
   color: #444;
   text-align: center;
-  line-height: 1.5;  
+  line-height: 1.5; 
+  background: url(./images/bg.jpg) no-repeat center;
+ background-size: cover; 
 }
 
 nav,
@@ -44,7 +45,7 @@ nav {
 
 .navbar li{
   display:inline-block;
-  font-size: 18px;
+  font-size: 14px;
   width:80px;  
   color:white;
   cursor:pointer;
@@ -69,6 +70,7 @@ nav {
   color:white;
   font-style: italic;
   font-family: 'Playfair Display', serif;
+  font-size:22px;
 }
 
 header {  
@@ -141,10 +143,10 @@ h3{
 }
 
 #page-about{
- background: url(./images/bg.jpg) no-repeat center;
-  background-size: cover;
+ /*background: url(./images/bg.jpg) no-repeat center;
+ background-size: cover;*/
   clear:both;
- /* height:50vh;*/
+  height:50%;
   overflow:visible;
 }
 
@@ -176,31 +178,31 @@ h3{
 
 .demoDiv{
   border: 1px solid #0092ff;
-  width: 65px;
+  width: 60px;
   height: 25px;
   line-height: 25px;
   vertical-align: middle;
-  font-size: 14px;
+  font-size: 12px;
   border-radius: 15px;
   color: white;
   background-color: #0092ff;
   display: inline-block;
-  float:left;
+  /*float:left;*/
 }
 
 .gitDiv{
   border: 1px solid #0092ff;
-  width: 65px;
+  width: 60px;
   height: 25px;
   line-height: 25px;
   vertical-align: middle;
-  font-size: 14px;
+  font-size: 12px;
   border-radius: 15px;
   color: white;
   background-color: #0092ff;
   margin-left:15px;
   display:inline-block;
-  float:left;
+  /*float:left;*/
 }
 
 .projectsCls h4{
@@ -215,8 +217,8 @@ h3{
 }
 
 .projectsCls img{
-  height: 55%;
-  width: 50%;
+  height: 50%;
+  width: 99%;
   border: 1px solid black;
   margin: 15px auto 15px auto;
   border-radius:15px;
@@ -224,18 +226,19 @@ h3{
 
 .projectsCls p{
   text-align: center;
-  font-size: 16px;
-  margin: 5px 15% 10px 15%;
+  font-size: 13.5px;
+  margin: 5px 25% 10px 25%;
   font-family: 'Ruda', sans-serif;
-  width: 70%;
+  width: 50%;
 }
 
 .projectsCls h5{
   text-align: left;
-  margin: 5px 0 5px 0;
+  margin: 0 5px;
 }
 a p{
-  color:blue;  
+ /* color:blue; */ 
+ display:inline-block;
 }
 
 main{
@@ -281,7 +284,8 @@ main{
 }
 .contactCls p {  
   margin: 0 auto;
-  width: 50%;
+ /* width: 50%;*/
+  font-size: 14px;  
 }
 
 footer{
@@ -295,11 +299,58 @@ a {
   text-decoration: none;
 }
 
+.parentCls{
+ /* display:table;*/
+}
+
+.imageClass{
+  display: inline-block;
+/*  border:1px solid black;*/
+  height: 75vh;
+  width: 40%;
+  vertical-align: top;
+ 
+}
+
+.descClass{
+  display: inline-block;
+/*  border:1px solid black; */
+  height: 75vh;
+  width: 32%; 
+  /*background-color: #2c9bb9; */
+}
+
+.descText{
+  height:80%;
+  width: 99%;
+ /* border: 2px solid blue;*/
+  padding: 15px;
+}
+
+.descText p{
+  font-size:12px;
+  width:auto;
+  height:auto;
+  margin:10px;
+  text-align: left;
+  max-width:75%;
+}
+
+.descText h6{
+  text-align: left;
+  margin:7px;
+}
+
+.descText span{
+  margin:3px;
+  display: inline-block;  
+}
+
 @media only screen and (max-width: 600px),
     only screen and (max-width:767px){
 
-      .navbar h1{
-      font-size:14px;
+    .navbar h1{
+      font-size:12px;
     }
 
     .navbar ul{
@@ -307,14 +358,14 @@ a {
     }
 
     .navbar li{
-      font-size: 12px;
+      font-size: 10px;
       width: 38px;
-      margin-right: 6px;
+      margin-right: 3px;
     }
 
     .projectsCls img{
-      height: 65%;
-      width: 60%;
+      height: 60%;
+      width: 90%;
       border: 1px solid black;
       margin: 15px auto 15px auto;
     }
@@ -329,6 +380,35 @@ a {
     .contactCls ul{
       padding:0;
     }
+
+    .projectsCls p{
+      width:auto;
+      margin:3px;
+    }
+
+    #page-about h3{
+      padding:10px;
+    }
+    .imageClass{
+      width:100%;
+      height: 32vh;
+    }
+
+    .descClass{
+      width:90%;
+      height:auto;
+    }
+    .descText{
+      padding:0;
+    }
+
+    .descText p{
+      max-width: 100%;
+    }
+    .contactCls p{
+      margin: 0 5px;
+      font-size: 12px;
+    }
 }
 
 /* galaxy s */
@@ -337,7 +417,7 @@ a {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
     .navbar h1{
-      font-size:14px;
+      font-size:12px;
     }
 
     .navbar ul{
@@ -455,14 +535,14 @@ a {
       }
 
       .navbar li{
-        font-size: 11px;
-        width: 35px;
+        font-size: 12px;
+        width: 45px;
         margin-right: 3px;
       }
 
       .projectsCls img{
         height: 65%;
-        width: 60%;
+        width: 90%;
         border: 1px solid black;
         margin: 15px auto 15px auto;
       }
@@ -473,9 +553,122 @@ a {
       footer ul{
         padding:0;
       }
+      #page-about h3{
+        font-size:14px;
+      }
 
       .contactCls ul{
         padding:0;
       }
+      ..contactCls p{
+        font-size:16px;
+      }
+      .projectsCls p{
+        font-size:13.8px;
+      }
+      #page-projects h3{
+        font-size:16px;
+      }
+      .projectsCls h5, h6{
+        font-size:14px;
+      }
+      .demoDiv, .gitDiv{
+        font-size:12px;
+        width:70px;
+        margin-bottom:5px;
+      }
+      .descClass{
+        margin:10px;
+      }
+      .contactCls i{
+        font-size: 14px;
+      }
+      .footerList i{
+        font-size: 16px;
+      }
+      .projectsCls h5, h6{
+        margin-top: 5px;
+      }
+          
     }
+/* ipad */
+@media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px)  {
+
+   #page-about{
+    height: 50vh;
+   }
+
+   .profileImgDiv{
+    height: 250px; 
+    width: 200px;
+    margin-top: 155px;
+   }
+   .navbar h1 {
+    font-size:32px;
+   }
+
+   .navbar li{
+    font-size:20px;
+   }
+
+   #page-about h3 {
+    padding: 69px 0 0 0;
+   }
+   #page-about .projectsCls p{
+    font-size:21.5px;
+    width:auto;
+    margin:0;
+   }
+   .imageClass{
+      width:100%;
+      height: 32vh;
+    }
+
+    .projectsCls img{
+      width: 93%;
+      height:75%;
+    }
+
+    .descClass{
+      width:90%;
+      height:auto;
+    }
+    .descText h5, h6{
+      font-size: 24px;
+    }
+    .descText p{
+      font-size:22px;
+      max-width: 99%;
+    }
+    .demoDiv, .gitDiv{
+      font-size:22px;
+      width:95px;
+    }
+    .contactCls p{
+      font-size:24px;
+    }
+ }
+
+/* iphone 5 SE */
+ @media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 378px)  {
+    .navbar li{
+      font-size: 10.5px;
+      width:38px;
+    }
+    .profileImgDiv{
+      height: 170px;
+      width: 150px;
+      margin-top: 35px;
+    }
+    .projectsCls{
+      margin:0px auto 35px auto;
+    }
+}
+    
+
+
 
