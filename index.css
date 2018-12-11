@@ -206,7 +206,7 @@ h3{
 }
 
 .serverCls{
-  background-color: darkblue;
+  width:90px;
 }
 
 .projectsCls h4{
@@ -395,7 +395,7 @@ a {
     }
     .imageClass{
       width:100%;
-      height: 32vh;
+      height: auto;
     }
 
     .descClass{
@@ -527,6 +527,32 @@ a {
       }
     }
 
+    /* iphone 5 SE */
+     @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 378px)  {
+        .navbar li{
+          font-size: 10.5px;
+          width:38px;
+        }
+        .profileImgDiv{
+          height: 170px;
+          width: 150px;
+          margin-top: 35px;
+        }
+        .projectsCls{
+          margin:0px auto 35px auto;
+        }
+
+        .projectsClas h5{
+          margin-top:29px;
+        }
+        .imageClass{
+          height:42vh;
+        }
+
+    }
+
     @media only screen 
     and (min-device-width : 320px) 
     and (max-device-width : 568px)  {
@@ -581,6 +607,10 @@ a {
         width:70px;
         margin-bottom:5px;
       }
+      .serverCls{
+        width:80px;
+      }
+
       .descClass{
         margin:10px;
       }
@@ -650,28 +680,17 @@ a {
       font-size:22px;
       width:95px;
     }
+
+    .serverCls{
+      width:150px;
+    }
+
     .contactCls p{
       font-size:24px;
     }
  }
 
-/* iphone 5 SE */
- @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 378px)  {
-    .navbar li{
-      font-size: 10.5px;
-      width:38px;
-    }
-    .profileImgDiv{
-      height: 170px;
-      width: 150px;
-      margin-top: 35px;
-    }
-    .projectsCls{
-      margin:0px auto 35px auto;
-    }
-}
+
     
 
 
