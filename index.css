@@ -205,6 +205,10 @@ h3{
   /*float:left;*/
 }
 
+.serverCls{
+  background-color: darkblue;
+}
+
 .projectsCls h4{
   text-align: left;
   margin:0;
